@@ -31,16 +31,18 @@ def ex2():
 # exercicio 3 - recebe nome do ficheiro e imprime linhas do ficheiro em ordem inversa
 
 def printLines(file):
+    file = open(file, "r", encoding="UTF8")
     lines = file.readlines()
+    file.close()
+
     string = ""
     for line in lines[::-1]:
         string = string + line
     return(string)
 
 def ex3():
-    file = open("teste.txt", "r", encoding="UTF8")
+    file = input("Insira o nome do ficheiro.")
     print("Linhas em ordem inversa: " + printLines(file))
-    file.close()
 
 # exercicio 4 - recebe nome do ficheiro e imprime numero de ocorrencias das 10 palavras mais frequentes do ficheiro
 
@@ -48,6 +50,7 @@ def ordena(e):
     return e[1]
 
 def numberOfOccurrences(file): 
+    file = open(file, "r")
     count = {}
     for line in file:
         words = line.split(" ")
@@ -57,10 +60,11 @@ def numberOfOccurrences(file):
             elif word in count:
                 count[word] += 1
     count = sorted(count.items(), key = ordena, reverse=True)
+    file.close()
     return count[:11]
 
 def ex4():
-    file = open("teste.txt", "r")
+    file = input("Insira o nome do ficheiro.")
     for i in numberOfOccurrences(file):
         print("Palavra: ", i[0], " ocorre ", i[1], "vez(es) no ficheiro.")
 
