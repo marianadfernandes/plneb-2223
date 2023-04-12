@@ -1,0 +1,166 @@
+
+body, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 10px;
+}
+
+h1, h2, h4, h5, .header, .navbar {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.Oqs, .Car, .Esp, .Cur {
+  margin-bottom: 30px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+hr {
+  margin-bottom: 15px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.welcome-container {
+  padding: 90px;
+  background-color: #d5f2da;
+}
+
+.Oqs {
+  background-color: #daf2d5;
+  padding: 20px;
+}
+
+.Car {
+  background-color: #d5f2da;
+  padding: 20px;
+}
+
+.Esp {
+  background-color: #daf2d5;
+  padding: 20px;
+}
+
+.Cur {
+  background-color: #d5f2da;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #d5f2da;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.navbar a:hover {
+  color: #666;
+}
+.slideshow-container {
+  flex-basis: 33.3%;
+  position: relative;
+  width: 400px; 
+  height: 300px; 
+  overflow: hidden;
+}
+
+.slideshow-images {
+  display: flex;
+  animation: slide 15s infinite; 
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  33.33% {
+      transform: translateX(-100%); 
+  }
+  66.67% {
+      transform: translateX(-200%); 
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.image {
+  flex-shrink: 0;
+  width: 400px; 
+  height: 300px; 
+  object-fit: cover; 
+}
+
+.text-container {
+  flex-basis: 66.7%; 
+  padding: 0 20px; 
+}
+
+.text-eng-container {
+  width: 700px;
+}
+
+.video-container {
+  float: right;
+  margin-top: 70px;
+  margin-left: 20px; 
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+th {
+  background-color: #c9f1c1; 
+  padding: 8px; 
+  text-align: center; 
+  font-weight: bold; 
+  border: 1px solid #8ea789; 
+}
+
+td {
+  padding: 8px; 
+  border: 1px solid #8ea789; 
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #c9f1c1; 
+}
