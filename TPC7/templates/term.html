@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <!-- <h3>{{ designation }}</h3>
+    <h5>Descrição: {{ value['des'] }}</h5>
+    <h5>EN: {{ value['en'] }}</h5> -->
+
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col" colspan="2">{{ designation }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th scope="row">Descrição</th>
+        <td>{{ value['des'] }}</td>
+        </tr>
+        <tr>
+        <th scope="row">EN</th>
+        <td>{{ value['en'] }}</td>
+        </tr>
+    </tbody>
+    </table>
+    
+
+{% endblock %}
