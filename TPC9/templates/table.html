@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Term</th>
+            <th>Designation</th>
+            <th>Translation</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for d, value in designations %}
+        <tr>
+            <td>{{ d }}</td>
+            <td>{{ value['des'] }}</td>
+            <td>{{ value['en'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Term</th>
+            <th>Designation</th>
+        </tr>
+    </tfoot>
+</table>
+
+{% endblock %}

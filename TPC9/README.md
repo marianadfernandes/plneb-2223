@@ -1,0 +1,1 @@
+- Criação de um tabela com designação, descrição e tradução em inglês.
